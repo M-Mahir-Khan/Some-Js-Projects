@@ -2,8 +2,6 @@ const hour = document.getElementById('hours')
 const minute = document.getElementById('minutes')
 const second = document.getElementById('second')
 const ampmEle = document.getElementById('am-pm')
-console.log(hour);
-console.log(ampmEle);
 
 function clock(){
     let h = new Date().getHours();
