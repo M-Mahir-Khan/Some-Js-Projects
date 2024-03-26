@@ -18,24 +18,19 @@ function generateQuestion() {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     
-   
     const userAns = parseInt(input.value); 
-    // console.log(ans);
     
     if (userAns === ans) {
         score++; 
         scoreval.textContent = score;
 
-    } else if(score > 0){
+    } else {
         score--; 
         scoreval.textContent = score;
     }
-
-    // scoreval.textContent = score;
     
     ans = generateQuestion()
     input.value = "";
-    // generateQuestion();
 });
 
 
